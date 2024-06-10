@@ -3,6 +3,8 @@
 Este projeto tem como objetivo armazenar os exercícios do estudo da linguagem java juntamente com outros paradigmas:
 **Orientação a Objeto, Programação Funcional, MySQL, MongoDB, Spring Boot, JavaFX, JPA, Hibernate e mais.**
 
+Além dos exercícios do curso, serão amazenados exercícios de java de diversas fontes também.
+
 ## **Informações Utéis**
 O projeto segue um programa de estudos através do curso da Udemy:
 
