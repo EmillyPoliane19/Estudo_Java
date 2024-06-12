@@ -1,4 +1,4 @@
-package src.controle;
+package curso.controle;
 
 import java.util.Random;
 import java.util.Scanner;

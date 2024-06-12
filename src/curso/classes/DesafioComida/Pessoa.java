@@ -1,4 +1,4 @@
-package src.classes.DesafioComida;
+package curso.classes.DesafioComida;
 
 public class Pessoa {
     String nome;
