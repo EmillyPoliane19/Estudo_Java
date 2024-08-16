@@ -1,6 +1,6 @@
 package curso.poo.composicao;
 
-public class ClienteTeste {
+public class Sistema {
     public static void main(String[] args) {
         Cliente cliente = new Cliente("João");
         Compra compra1 = new Compra(cliente);
