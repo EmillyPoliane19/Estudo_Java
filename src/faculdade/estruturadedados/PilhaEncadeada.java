@@ -1,6 +1,6 @@
 package faculdade.estruturadedados;
 
-import faculdade.estruturadedados.exceptions.StackEmptyException;
+import faculdade.estruturadedados.exceptions.ColletionsEmptyException;
 
 import java.util.Iterator;
 
@@ -22,7 +22,7 @@ public class PilhaEncadeada<E> implements Iterable<E> {
     }
 
     public E pop() {
-        if (isEmpty()) throw new StackEmptyException("Stack underflow");
+        if (isEmpty()) throw new ColletionsEmptyException("Stack underflow");
         E elementoExcluido = topo.elemento;
         topo = topo.proximo;
         tamanho--;
@@ -30,7 +30,7 @@ public class PilhaEncadeada<E> implements Iterable<E> {
     }
 
     public E peek() {
-        if (isEmpty()) throw new StackEmptyException("Stack underflow");
+        if (isEmpty()) throw new ColletionsEmptyException("Stack underflow");
         return topo.elemento;
     }
 

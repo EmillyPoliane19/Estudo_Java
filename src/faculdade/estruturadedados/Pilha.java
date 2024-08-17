@@ -1,6 +1,6 @@
 package faculdade.estruturadedados;
 
-import faculdade.estruturadedados.exceptions.StackEmptyException;
+import faculdade.estruturadedados.exceptions.ColletionsEmptyException;
 
 import java.util.Iterator;
 
@@ -19,7 +19,7 @@ public class Pilha<E> implements Iterable<E> {
         return tamanho;
     }
 
-    public void rezise(int capacity) {
+    private void rezise(int capacity) {
         assert capacity >= tamanho;
 
         E copy[] = (E[]) new Object[capacity];
@@ -41,7 +41,7 @@ public class Pilha<E> implements Iterable<E> {
 
     public E pop() {
         if (tamanho == pilha.length) rezise(2 * pilha.length);
-        if (isEmpty()) throw new StackEmptyException("Stack underflow");
+        if (isEmpty()) throw new ColletionsEmptyException("Stack underflow");
         E e = pilha[tamanho - 1];
         pilha[tamanho - 1] = null;
         tamanho--;
@@ -50,7 +50,7 @@ public class Pilha<E> implements Iterable<E> {
     }
 
     public E peek() {
-        if (isEmpty()) throw new StackEmptyException("Stack underflow");
+        if (isEmpty()) throw new ColletionsEmptyException("Stack underflow");
         return pilha[tamanho - 1];
     }
 
