@@ -1,6 +1,6 @@
 package faculdade.estruturadedados;
 
-import faculdade.estruturadedados.exceptions.ColletionsEmptyException;
+import faculdade.estruturadedados.exceptions.CollectionsEmptyException;
 
 public class Lista <E> {
     private No<E> inicio;
@@ -78,7 +78,7 @@ public class Lista <E> {
     }
 
     public E removerInicio() {
-        if (isEmpty()) throw new ColletionsEmptyException("Fila underflow");
+        if (isEmpty()) throw new CollectionsEmptyException("Fila underflow");
 
         No<E> removido = inicio;
         inicio = inicio.proximo;
@@ -89,7 +89,7 @@ public class Lista <E> {
     }
 
     public E removerFinal() {
-        if (isEmpty()) throw new ColletionsEmptyException("Fila underflow");
+        if (isEmpty()) throw new CollectionsEmptyException("Fila underflow");
 
         if (tamanho == 1) { // Caso em que há apenas um elemento
             No<E> removido = ultimo;

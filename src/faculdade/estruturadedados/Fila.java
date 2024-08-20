@@ -1,6 +1,6 @@
 package faculdade.estruturadedados;
 
-import faculdade.estruturadedados.exceptions.ColletionsEmptyException;
+import faculdade.estruturadedados.exceptions.CollectionsEmptyException;
 
 public class Fila<E> {
     private E[] fila;
@@ -35,12 +35,12 @@ public class Fila<E> {
     }
 
     public E front(){
-        if (isEmpty()) throw new ColletionsEmptyException("Fila underflow");
+        if (isEmpty()) throw new CollectionsEmptyException("Fila underflow");
         return fila[inicio];
     }
 
     public E dequeue() {
-        if (isEmpty()) throw new ColletionsEmptyException("Fila underflow");
+        if (isEmpty()) throw new CollectionsEmptyException("Fila underflow");
         E elementoRemovido = fila[inicio];
         fila[inicio] = null;
         tamanho--;
